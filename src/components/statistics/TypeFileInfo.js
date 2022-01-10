@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import color from "./doColor";
+import color from "../../helper/doColor";
 import { Item } from "./Statistics.styled";
 
 export default function TypeFileInfo({ label, percentage }) {
