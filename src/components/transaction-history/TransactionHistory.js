@@ -21,11 +21,11 @@ export default function TransactionHistory({ items }) {
         </tr>
       </TableHeader>
       <TableBody>
-        {items.map((item) => (
-          <TableRow key={item.id}>
-            <TableData>{item.type}</TableData>
-            <TableDataBorder>{item.amount}</TableDataBorder>
-            <TableData>{item.currency}</TableData>
+        {items.map(({ id, type, amount, currency }) => (
+          <TableRow key={id}>
+            <TableData>{type}</TableData>
+            <TableDataBorder>{amount}</TableDataBorder>
+            <TableData>{currency}</TableData>
           </TableRow>
         ))}
       </TableBody>
